@@ -1,0 +1,123 @@
+$auto:auto;
+$black:#000;
+$center:center;
+$gray:gray;
+$none:none;
+$right:right;
+$white:#fff;
+$zeroValue:0;
+body{
+    background-color: #f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin:$zeroValue;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 80%;
+    margin: $auto;
+    overflow: hidden;
+}
+#main-header{
+    background-color:$black;
+    color: $white;
+}
+#navbar{
+    background-color:$gray;
+    color: $white;
+}
+#navbar ul{
+    padding: $zeroValue;
+    list-style: $none;    
+}
+#navbar li{
+    display: inline;
+    padding-right: 15px;
+}
+#navbar a{
+    text-decoration: $none;
+    color:$white;
+    font-size: 18px;
+}
+#navbar a:hover{
+    color:$black;
+}
+#showcase{
+    background-image: url('../images/javascript-foreach1.jpg');
+    background-position: $center ;
+    height: 185px;
+    margin-bottom: 30px;
+    text-align: $center;
+}
+#main{
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: $black;
+    color:$white;
+    padding: 10px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.my-form{
+    padding:20px;
+}
+.my-form .form-group{
+    padding-bottom: 15px;;
+}
+.my-form label{
+    display: block;
+}
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+.my-form input[type="submit"]{
+    width: 100%;
+    background-color: $black;
+    color:$white;
+    padding: 10px 15px;
+    border: $none;
+}
+
+#main-footer{
+    background-color: $black;
+    color:$white;
+    margin:$auto;
+    text-align: $center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/*sudo elements*/
+.my-list li:first-child{
+    background-color: $gray;
+}
+.my-list li:last-child{
+    background-color: $gray;
+}
+.my-list li:nth-child(5){
+    background-color: $black;
+}
+.my-list li:nth-child(even){
+    background-color: $black;
+}
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float: $none;
+    }
+      #sidebar{
+        width: 100%;
+        float: $none;
+    }
+}
