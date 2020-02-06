@@ -68,7 +68,10 @@ body{
     padding: 0 30px;
     box-sizing: border-box;
 }
-
+.error{
+    color:red;
+    font-size: 15px;
+}
 .my-form{
     padding:20px;
     background-color: #e4dfdf;
@@ -96,7 +99,10 @@ body{
     border-radius: 5px;
     box-sizing: border-box;
 }
-
+.my-form input[type="submit"]:hover{
+     background-color: $gray;
+    color:$white;
+}
 #main-footer{
     background-color: $black;
     color:$white;
@@ -105,19 +111,37 @@ body{
     padding: 20px;
     margin-top: 40px;
 }
+
+.my-list {
+    display: $none;
+  padding: 0px;
+}
+ul{
+  list-style: $none;
+}
+li {
+  background-color: #e4dfdf;
+  list-style: none;
+  padding:5px;
+  margin:5px 0;
+}
+.bg-dark{
+    background: #333;
+    color: $white;
+}
 /*sudo elements*/
-.my-list li:first-child{
-    background-color: $gray;
-}
-.my-list li:last-child{
-    background-color: $gray;
-}
-.my-list li:nth-child(5){
-    background-color: $black;
-}
-.my-list li:nth-child(even){
-    background-color: $black;
-}
+// .my-list li:first-child{
+//     background-color: $gray;
+// }
+// .my-list li:last-child{
+//     background-color: $gray;
+// }
+// .my-list li:nth-child(5){
+//     background-color: $black;
+// }
+// .my-list li:nth-child(even){
+//     background-color: $black;
+// }
 @media(max-width:600px){
     #main{
         width: 100%;
