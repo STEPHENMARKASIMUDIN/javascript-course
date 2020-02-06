@@ -25,7 +25,7 @@ const todoList = [
 ];
 //high order array methods
 todoList.forEach((todo) => {
-    console.log(todo);
+    //console.log(todo);
 });
 const todoText = todoList.map((todo) => {
     return todo.text;

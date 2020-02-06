@@ -76,6 +76,8 @@ body {
 
 .my-form {
   padding: 20px;
+  background-color: #e4dfdf;
+  color: #000;
 }
 
 .my-form .form-group {
@@ -89,6 +91,10 @@ body {
 .my-form input[type="text"], .my-form textarea {
   padding: 8px;
   width: 100%;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .my-form input[type="submit"] {
@@ -97,6 +103,9 @@ body {
   color: #fff;
   padding: 10px 15px;
   border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #main-footer {
